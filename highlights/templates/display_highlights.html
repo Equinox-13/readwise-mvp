@@ -1,0 +1,16 @@
+<!-- display_highlights.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Highlights</title>
+</head>
+<body>
+    <h1>Your Highlights</h1>
+    <ul>
+        {% for highlight in highlights %}
+            <li>{{ highlight.content }}</li>
+            <!-- Render other fields of the highlight -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
