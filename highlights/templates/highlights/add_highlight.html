@@ -1,0 +1,23 @@
+<!-- add_highlight.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Highlight</title>
+</head>
+<body>
+    <h1>Add a Highlight</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Add fields for the highlight form -->
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source"><br><br>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content"></textarea><br><br>
+
+        <!-- Add other fields as needed -->
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
