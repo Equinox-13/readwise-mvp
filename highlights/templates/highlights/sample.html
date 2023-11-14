@@ -1,0 +1,23 @@
+<!-- add_highlight.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Sample form</title>
+</head>
+<body>
+    <h1>Add a Sample form</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Add fields for the highlight form -->
+        <label for="title">title:</label>
+        <input type="text" id="title" name="title" required="True"><br><br>
+
+        <label for="author">author:</label>
+        <textarea id="author" name="author"></textarea><br><br>
+
+        <!-- Add other fields as needed -->
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
